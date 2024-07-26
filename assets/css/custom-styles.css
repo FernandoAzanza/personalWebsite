@@ -1,0 +1,68 @@
+.overlay-text,
+.posts p {
+    white-space: pre-line;
+    /* Allows line breaks to be respected */
+}
+
+.image.fit {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    /* Center align the text */
+}
+
+.image.fit:hover .overlay-text {
+    opacity: 1;
+}
+
+.image.fit img {
+    width: 100%;
+    height: 500px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
+}
+
+#footer .center-content {
+    text-align: center;
+}
+
+#footer .icons.alt {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.split.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.split.contact section {
+    margin: 10px;
+}
+.no-line-break {
+    white-space: nowrap;
+}
